@@ -39,8 +39,8 @@ def main():
         for obj in asteroids:
             for obj2 in shots:
                 if obj.collision(obj2):
-                    obj.kill()
                     obj2.kill()
+                    obj.split()
 
         screen.fill("black")
 
